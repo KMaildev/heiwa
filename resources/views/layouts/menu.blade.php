@@ -10,8 +10,8 @@
                         </li>
 
                         <li class="contact-email">
-                            < i class="fa fa-envelope font-icon sm-display-block"></i>
-                                info@heiwamm.com
+                            <i class="fa fa-envelope font-icon sm-display-block"></i>
+                            info@heiwamm.com
                         </li>
 
                         <li class="contact-address">
@@ -43,8 +43,16 @@
                     </div>
 
                     <div class="element pt-0 pt-lg-10 pb-0">
-                        <a href="" class="btn btn-theme-colored2 btn-sm ajaxload-popup">
-                            Make an Appointment
+                        <a href="{{ route('eng') }}" class="text-white">
+                            <img src="{{ asset('data/eng.png') }}" alt=""
+                                style="width: 43px; height: auto; padding: 2px;">
+                            English
+                        </a>
+
+                        <a href="{{ route('jp') }}" class="text-white">
+                            <img src="{{ asset('data/japan.png') }}" alt=""
+                                style="width: 43px; height: auto; padding: 2px;">
+                            Japan
                         </a>
                     </div>
 
@@ -131,23 +139,27 @@
                                 data-animation="none" data-align="right">
                                 <ul id="main-nav" class="menuzord-menu">
 
-                                    <li class="active menu-item">
+                                    <li class="menu-item">
                                         <a href="{{ route('home') }}">
-                                            Home
+                                            @if (session('key') == 'jp')
+                                                ホーム
+                                            @else
+                                                Home
+                                            @endif
                                         </a>
                                     </li>
 
                                     <li class="menu-item">
-                                        <a href="#">About</a>
+                                        <a href="#">
+                                            @if (session('key') == 'jp')
+                                                会社概要
+                                            @else
+                                                About Us
+                                            @endif
+                                        </a>
                                         <ul class="dropdown">
                                             <li>
-                                                <a href="page-preloader.html">Our Company</a>
-                                            </li>
-                                            <li>
-                                                <a href="page-preloader.html">Vision, Mission, Valuey</a>
-                                            </li>
-                                            <li>
-                                                <a href="page-preloader.html">Company Overview</a>
+                                                <a href="{{ route('about') }}">Our Company</a>
                                             </li>
                                             <li>
                                                 <a href="{{ route('team.index') }}">Our Teams</a>
@@ -157,26 +169,42 @@
 
                                     <li class="menu-item">
                                         <a href="{{ route('course.index') }}">
-                                            Courses & Time Schedules
+                                            @if (session('key') == 'jp')
+                                                コースとタイムスケジュール
+                                            @else
+                                                Courses & Time Schedules
+                                            @endif
                                         </a>
                                     </li>
 
 
                                     <li class="menu-item">
                                         <a href="#">
-                                            Teaching Method
+                                            @if (session('key') == 'jp')
+                                                教え方
+                                            @else
+                                                Teaching Method
+                                            @endif
                                         </a>
                                     </li>
 
                                     <li class="menu-item">
                                         <a href="{{ route('activities.index') }}">
-                                            Events & Activities
+                                            @if (session('key') == 'jp')
+                                                イベントとアクティビティ
+                                            @else
+                                                Events & Activities
+                                            @endif
                                         </a>
                                     </li>
 
                                     <li class="menu-item">
                                         <a href="{{ route('contact.index') }}">
-                                            Contact Us
+                                            @if (session('key') == 'jp')
+                                                お問い合わせ
+                                            @else
+                                                Contact Us
+                                            @endif
                                         </a>
                                     </li>
 
