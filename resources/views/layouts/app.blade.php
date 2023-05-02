@@ -11,11 +11,14 @@
 
     <title>Heiwa Co.,Ltd</title>
 
-    <link href="{{ asset('assets/images/favicon.png') }}" rel="shortcut icon" type="image/png">
-    <link href="{{ asset('assets/images/apple-touch-icon.png') }}" rel="apple-touch-icon">
-    <link href="{{ asset('assets/images/apple-touch-icon-72x72.png') }}" rel="apple-touch-icon" sizes="72x72">
-    <link href="{{ asset('assets/images/apple-touch-icon-114x114.png') }}" rel="apple-touch-icon" sizes="114x114">
-    <link href="{{ asset('assets/images/apple-touch-icon-144x144.png') }}" rel="apple-touch-icon" sizes="144x144">
+    <link href="{{ asset('data/logo.jpg') }}" rel="shortcut icon" type="image/png">
+    <meta name="description" content="Heiwa Co.,Ltd" />
+    <meta name="keywords" content="Heiwa Co.,Ltd, Japan, Japanese Language School, Training" />
+    <meta name="author" content="Heiwa Co.,Ltd" />
+    <meta property="og:title" content="Heiwa Co.,Ltd" />
+    <meta property="og:image" content="{{ asset('data/logo.jpg') }}" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Heiwa Co.,Ltd" />
 
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/css/animate.min.css') }}" rel="stylesheet" type="text/css">

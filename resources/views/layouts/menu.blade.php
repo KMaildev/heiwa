@@ -65,11 +65,13 @@
             <div class="row">
 
                 <div class="col-xl-auto align-self-center header-mid-left text-center text-xl-start">
-                    <a class="menuzord-brand site-brand" href="index-mp-layout1.html">
-                        <img class="logo-default logo-1x" src="{{ asset('assets/images/logo-wide.png') }}"
-                            alt="Logo">
-                        <img class="logo-default logo-2x retina" src="{{ asset('assets/images/logo-wide%402x.png') }}"
-                            alt="Logo">
+                    <a class="" href="{{ route('home') }}">
+
+                        <img class="" src="{{ asset('data/logo.jpg') }}"
+                            alt="Logo" style="width: 50%;">
+                            
+                        {{-- <img class="logo-default logo-2x retina" src="{{ asset('data/logo.jpg') }}"
+                            alt="Logo"> --}}
                     </a>
                 </div>
 
